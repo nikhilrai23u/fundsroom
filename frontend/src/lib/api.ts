@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "https://fundsroom-ov1u.onrender.com",
+  baseURL: "https://fundsroom-ov1u.onrender.com/api",
 });
 
 api.interceptors.request.use((config) => {

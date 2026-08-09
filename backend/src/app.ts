@@ -14,7 +14,15 @@ import stockMovementRoutes from "./routes/stockMovement.routes";
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://fundsroom-eosin.vercel.app/",
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);

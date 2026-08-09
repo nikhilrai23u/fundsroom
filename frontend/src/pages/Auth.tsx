@@ -16,7 +16,7 @@ export default function Auth() {
     try {
       if (isLogin) {
         const { data } = await axios.post(
-          "http://localhost:3000/api/auth/login",
+          "https://fundsroom-ov1u.onrender.com/api/auth/login",
           {
             email,
             password,
@@ -32,7 +32,7 @@ export default function Auth() {
           "/dashboard";
       } else {
         await axios.post(
-          "http://localhost:3000/api/auth/register",
+            "https://fundsroom-ov1u.onrender.com/api/auth/register",
           {
             name,
             email,

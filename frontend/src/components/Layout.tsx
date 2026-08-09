@@ -4,7 +4,6 @@ import {
   Users,
   Package,
   FileText,
-  LogOut,
   Warehouse
 } from "lucide-react";
 
